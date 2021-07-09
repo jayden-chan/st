@@ -6,7 +6,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:pixelsize=17:antialias=true:autohint=true";
+static char *font = "JetBrainsMono Nerd Font:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 0;
 
 /*
@@ -97,28 +97,28 @@ unsigned int tabspaces = 4;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* Gruvbox Theme */
-    "#282828",
-    "#cc241d",
-    "#98971a",
-    "#d79921",
-    "#458588",
-    "#b16286",
-    "#689d6a",
-    "#a89984",
-    "#928374",
-    "#fb4934",
-    "#b8bb26",
-    "#fabd2f",
-    "#83a598",
-    "#d3869b",
-    "#8ec07c",
-    "#ebdbb2",
+    "#333232",
+    "#b76666",
+    "#8d987e",
+    "#c6aa82",
+    "#717e88",
+    "#958793",
+    "#8aa6a5",
+    "#d3d3c4",
+    "#403e3e",
+    "#b66467",
+    "#8d987e",
+    "#dcbb8c",
+    "#6f8392",
+    "#958793",
+    "#8aa6a5",
+    "#d3d3c4",
 
     [255] = 0,
 
     /* more colors can be added after 255 to use with DefaultXX */
-    "#d5d5d5",
-    "#1d2021",
+    "#b5b1a4",
+    "#262525",
     "#ebdbb2"
 };
 
