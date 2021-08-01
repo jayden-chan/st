@@ -12,7 +12,7 @@ Patching
 
 ```bash
 ./apply-patches.sh
-# (vim will open, fix the conflict)
+# (vim will open repeatedly, fix the conflicts)
 # apply this: https://github.com/Dreomite/st/commit/e3b821dcb3511d60341dec35ee05a4a0abfef7f2
 ```
 

@@ -12,3 +12,5 @@ patch --merge < patches/st-blinking_cursor-20200531-a2a7044.diff
 patch --merge < patches/st-vertcenter-20180320-6ac8c8a.diff
 patch --merge < patches/st-newterm-0.8.2.diff
 nvim config.def.h
+patch --merge < patches/st-externalpipe-0.8.4.diff
+nvim st.h
