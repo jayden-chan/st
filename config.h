@@ -108,7 +108,6 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-/* Gruvbox Theme */
     "#333232",
     "#b76666",
     "#8d987e",
@@ -205,8 +204,8 @@ static MouseShortcut mshortcuts[] = {
 #define MODKEY Mod1Mask
 #define TERMMOD (ControlMask|ShiftMask)
 
-static char *openurlcmd[] = { "/bin/sh", "-c", "$HOME/Documents/Git/dotfiles/scripts/st-urlhandler.sh -o", "externalpipe", NULL };
-static char *copyurlcmd[] = { "/bin/sh", "-c", "$HOME/Documents/Git/dotfiles/scripts/st-urlhandler.sh -c", "externalpipe", NULL };
+static char *openurlcmd[] = { "/bin/dash", "-c", "$HOME/Documents/Git/dotfiles/scripts/st-urlhandler.sh -o", "externalpipe", NULL };
+static char *copyurlcmd[] = { "/bin/dash", "-c", "$HOME/Documents/Git/dotfiles/scripts/st-urlhandler.sh -c", "externalpipe", NULL };
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
