@@ -130,6 +130,7 @@ static const char *colorname[] = {
     /* more colors can be added after 255 to use with DefaultXX */
     "#b5b1a4",
     "#1e1e1e",
+    /* "#ffffff" */
     "#ebdbb2"
 };
 
@@ -204,8 +205,8 @@ static MouseShortcut mshortcuts[] = {
 #define MODKEY Mod1Mask
 #define TERMMOD (ControlMask|ShiftMask)
 
-static char *openurlcmd[] = { "/bin/dash", "-c", "$HOME/Documents/Git/dotfiles/scripts/st-urlhandler.sh -o", "externalpipe", NULL };
-static char *copyurlcmd[] = { "/bin/dash", "-c", "$HOME/Documents/Git/dotfiles/scripts/st-urlhandler.sh -c", "externalpipe", NULL };
+static char *openurlcmd[] = { "/bin/dash", "-c", "$HOME/.config/dotfiles/scripts/st-urlhandler.sh -o", "externalpipe", NULL };
+static char *copyurlcmd[] = { "/bin/dash", "-c", "$HOME/.config/dotfiles/scripts/st-urlhandler.sh -c", "externalpipe", NULL };
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
