@@ -7,7 +7,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "JetBrainsMono Nerd Font Mono:pixelsize=15:antialias=true:autohint=false:fonthashint=true";
-static int borderpx = 0;
+static int borderpx = 11;
 
 /*
  * What program is execed by st depends of these precedence rules:
