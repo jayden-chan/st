@@ -6,7 +6,16 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font Mono:pixelsize=15:antialias=true:autohint=false:fonthashint=true";
+
+/* Font settings */
+/* static char *font = "JetBrainsMono Nerd Font Mono:pixelsize=15:antialias=true:autohint=false:fonthashint=true"; */
+/* static float cwscale = 1.0; */
+/* static float chscale = 0.9; */
+
+static char *font = "Iosevka Nerd Font Mono:pixelsize=18:antialias=true:autohint=false:fonthashint=true";
+static float cwscale = 1.0;
+static float chscale = 0.91;
+
 static int borderpx = 11;
 
 /*
@@ -25,10 +34,6 @@ char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
 /* identification sequence returned in DA and DECID */
 char *vtiden = "\033[?6c";
-
-/* Kerning / character bounding-box multipliers */
-static float cwscale = 1.0;
-static float chscale = 0.9;
 
 /*
  * word delimiter string
@@ -129,7 +134,7 @@ static const char *colorname[] = {
 
     /* more colors can be added after 255 to use with DefaultXX */
     "#b5b1a4",
-    "#1e1e1e",
+    "#151515",
     /* "#ffffff" */
     "#ebdbb2"
 };
