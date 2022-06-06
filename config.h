@@ -8,7 +8,7 @@
  */
 
 /* Font settings */
-/* static char *font = "JetBrainsMono Nerd Font Mono:pixelsize=15:antialias=true:autohint=false:fonthashint=true"; */
+/* static char *font = "Mono:pixelsize=17:antialias=true:autohint=false:fonthashint=true"; */
 /* static float cwscale = 1.0; */
 /* static float chscale = 0.9; */
 
@@ -113,30 +113,47 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    "#333232",
-    "#b76666",
-    "#8d987e",
-    "#c6aa82",
-    "#717e88",
-    "#958793",
-    "#8aa6a5",
-    "#d3d3c4",
-    "#403e3e",
-    "#b66467",
-    "#8d987e",
-    "#dcbb8c",
-    "#6f8392",
-    "#958793",
-    "#8aa6a5",
-    "#d3d3c4",
+    /* "#333232", */
+    /* "#b76666", */
+    /* "#8d987e", */
+    /* "#c6aa82", */
+    /* "#717e88", */
+    /* "#958793", */
+    /* "#8aa6a5", */
+    /* "#d3d3c4", */
+    /* "#403e3e", */
+    /* "#b66467", */
+    /* "#8d987e", */
+    /* "#dcbb8c", */
+    /* "#6f8392", */
+    /* "#958793", */
+    /* "#8aa6a5", */
+    /* "#d3d3c4", */
+
+    "#2c2f30",
+    "#ec6b64",
+    "#a9b665",
+    "#e0c080",
+    "#7daea3",
+    "#d3869b",
+    "#86b17f",
+    "#c0b196",
+    "#2c2f30",
+    "#ec6b64",
+    "#a9b665",
+    "#e0c080",
+    "#7daea3",
+    "#d3869b",
+    "#86b17f",
+    "#c0b196",
 
     [255] = 0,
 
     /* more colors can be added after 255 to use with DefaultXX */
     "#b5b1a4",
-    "#151515",
+    "#1e2122",
     /* "#ffffff" */
-    "#ebdbb2"
+    "#c0b196"
 };
 
 
