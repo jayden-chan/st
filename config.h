@@ -12,7 +12,7 @@
 /* static float cwscale = 1.0; */
 /* static float chscale = 0.9; */
 
-static char *font = "Iosevka Nerd Font Mono:pixelsize=18:antialias=true:autohint=false:fonthashint=true";
+static char *font = "Iosevka Nerd Font Mono:pixelsize=16:antialias=true:autohint=false:fonthashint=true";
 static float cwscale = 1.0;
 static float chscale = 0.91;
 
@@ -59,8 +59,8 @@ int allowwindowops = 0;
  * near minlatency, but it waits longer for slow updates to avoid partial draw.
  * low minlatency will tear/flicker more, as it can "detect" idle too early.
  */
-static double minlatency = 8;
-static double maxlatency = 33;
+static double minlatency = 4;
+static double maxlatency = 16;
 
 /*
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
@@ -113,47 +113,84 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    /* "#333232", */
-    /* "#b76666", */
-    /* "#8d987e", */
-    /* "#c6aa82", */
-    /* "#717e88", */
-    /* "#958793", */
-    /* "#8aa6a5", */
-    /* "#d3d3c4", */
-    /* "#403e3e", */
-    /* "#b66467", */
-    /* "#8d987e", */
-    /* "#dcbb8c", */
-    /* "#6f8392", */
-    /* "#958793", */
-    /* "#8aa6a5", */
-    /* "#d3d3c4", */
+    // custom
+    // "#333232",
+    // "#b76666",
+    // "#8d987e",
+    // "#c6aa82",
+    // "#717e88",
+    // "#958793",
+    // "#8aa6a5",
+    // "#d3d3c4",
+    // "#403e3e",
+    // "#b66467",
+    // "#8d987e",
+    // "#dcbb8c",
+    // "#6f8392",
+    // "#958793",
+    // "#8aa6a5",
+    // "#d3d3c4",
 
-    "#2c2f30",
-    "#ec6b64",
-    "#a9b665",
-    "#e0c080",
-    "#7daea3",
-    "#d3869b",
-    "#86b17f",
-    "#c0b196",
-    "#2c2f30",
-    "#ec6b64",
-    "#a9b665",
-    "#e0c080",
-    "#7daea3",
-    "#d3869b",
-    "#86b17f",
-    "#c0b196",
+    // gruvchad
+    // "#2c2f30",
+    // "#ec6b64",
+    // "#a9b665",
+    // "#e0c080",
+    // "#7daea3",
+    // "#d3869b",
+    // "#86b17f",
+    // "#c0b196",
+    // "#2c2f30",
+    // "#ec6b64",
+    // "#a9b665",
+    // "#e0c080",
+    // "#7daea3",
+    // "#d3869b",
+    // "#86b17f",
+    // "#c0b196",
+
+
+    // Color 0  == background
+    // Color 1  == red
+    // Color 2  == green
+    // Color 3  == yellow
+    // Color 4  == blue
+    // Color 5  == purple
+    // Color 6  == cyan
+    // Color 7  == gray
+    // Color 8  == gray 2
+    // Color 9  == red 2
+    // Color 10 == green 2
+    // Color 11 == orange
+    // Color 12 == blue 2
+    // Color 13 == purple 2
+    // Color 14 == cyan 2
+    // Color 15 == text
+
+    "#2b3339",
+    "#e67e80",
+    "#a7c080",
+    "#dbbc7f",
+    "#95d1c9",
+    "#d699b6",
+    "#95d1c9",
+    "#e7dabe",
+    "#3a4248",
+    "#e67e80",
+    "#a7c080",
+    "#dbbc7f",
+    "#95d1c9",
+    "#d699b6",
+    "#95d1c9",
+    "#d3c6aa",
 
     [255] = 0,
 
     /* more colors can be added after 255 to use with DefaultXX */
     "#b5b1a4",
-    "#1e2122",
+    "#2b3339",
     /* "#ffffff" */
-    "#c0b196"
+    "#d3c6aa"
 };
 
 
