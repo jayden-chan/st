@@ -14,7 +14,7 @@
 
 static char *font = "Iosevka Nerd Font Mono:pixelsize=16:antialias=true:autohint=false:fonthashint=true";
 static float cwscale = 1.0;
-static float chscale = 0.91;
+static float chscale = 1.0;
 
 static int borderpx = 11;
 
