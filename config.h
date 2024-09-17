@@ -264,8 +264,8 @@ static MouseShortcut mshortcuts[] = {
 #define MODKEY Mod1Mask
 #define TERMMOD (ControlMask|ShiftMask)
 
-static char *openurlcmd[] = { "/bin/dash", "-c", "$HOME/.config/dotfiles/scripts/st-urlhandler.sh -o", "externalpipe", NULL };
-static char *copyurlcmd[] = { "/bin/dash", "-c", "$HOME/.config/dotfiles/scripts/st-urlhandler.sh -c", "externalpipe", NULL };
+static char *openurlcmd[] = { "/usr/bin/env", "bash", "-c", "$DOT/scripts/st-urlhandler.sh -o", "externalpipe", NULL };
+static char *copyurlcmd[] = { "/usr/bin/env", "bash", "-c", "$DOT/scripts/st-urlhandler.sh -c", "externalpipe", NULL };
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
