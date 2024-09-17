@@ -1,0 +1,45 @@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+bindir = @bindir@
+
+VERSION = 0.8.4
+
+# includes and libs
+INCS = `pkg-config --cflags fontconfig` \
+       `pkg-config --cflags freetype2` \
+       `pkg-config --cflags harfbuzz`
+LIBS = -lm -lrt -lX11 -lutil -lXft \
+       `pkg-config --libs fontconfig` \
+       `pkg-config --libs freetype2` \
+       `pkg-config --libs harfbuzz`
+
+# flags
+STCPPFLAGS = -DVERSION=\"$(VERSION)\" -D_XOPEN_SOURCE=600
+STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS)
+STLDFLAGS = $(LIBS) $(LDFLAGS)
+
+SRC = st.c x.c boxdraw.c hb.c
+OBJ = $(SRC:.c=.o)
+
+config.h:
+	cp config.def.h config.h
+
+.c.o:
+	$(CC) $(STCFLAGS) -c $<
+
+st.o: config.h st.h win.h
+x.o: arg.h config.h st.h win.h hb.h
+hb.o: st.h
+boxdraw.o: config.h st.h boxdraw_data.h
+
+$(OBJ): config.h
+
+st: $(OBJ)
+	$(CC) -o $@ $(OBJ) $(STLDFLAGS)
+
+clean:
+	rm -f st
+
+install: st
+	install -d $(bindir)
+	install -t $(bindir) st
